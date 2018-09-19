@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+  <title>K Space visualization</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <script type="text/javascript" src="js/plotly.js"></script>
+</head>
+<body>
+  <div class="container full-width" style="padding: 0">
+    <div class="row full-width">
+
+      <!-- Buttons -->
+      <div class="col-xs-10 col-xs-offset-1" style="display: flex;">
+        <div id="button_container" class="row full-width">
+          <div class="col-xs-4">
+            <div id="import_data" class="button">Import data</div>
+          </div>
+          <div class="col-xs-4">
+            <div id="add_point" class="button">Add point</div>
+          </div>
+          <div class="col-xs-4">
+            <div id="clear_data" class="button">Clear data</div>
+          </div>
+        </div>
+      </div>
+
+      
+      <!-- Visualizations -->
+      <div class="col-xs-10 col-xs-offset-1">
+        <div class="row" style="display: flex">
+
+          <div class="col-xs-6">
+            <canvas id="k_space_canvas" width="500" height="500" style="display: none"></canvas>
+            <div id="k_space" class="vis-block"></div>  
+          </div>
+
+          <div class="col-xs-6">
+            <canvas id="img_space_canvas" width="500" height="500" style="display: none"></canvas>
+            <div id="img_space" class="vis-block"></div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <script type="text/javascript" src="js/k_space.js"></script>
+  <script type="text/javascript" src="js/img_space.js"></script>
+</body>
+</html>

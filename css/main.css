@@ -1,0 +1,33 @@
+#k_space {
+	margin: 15px 10px 10px 0;
+}
+
+#img_space {
+	margin: 15px 0 10px 10px;
+}
+
+#import_data {}
+#add_point {}
+#clear_data {}
+
+#button_container {
+	margin-top: 20px;
+}
+
+.full-width {
+	width: 100%
+}
+
+.vis-block {
+	width: 39vw;
+	height: 39vw;
+}
+
+.button {
+	height: 40px;
+	width: 50%;
+	margin-left: 25%;
+	text-align: center;
+	border: black solid 2px;
+	border-radius: 10px;
+}
